@@ -8,16 +8,33 @@
 
 import UIKit
 import XCTest
+import test2
 
 class test2Tests: XCTestCase {
     
+    var searcher: Search!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+        var dataString = String(
+            contentsOfFile: NSBundle.mainBundle().pathForResource("data", ofType: "txt")!,
+            encoding: NSUTF8StringEncoding, error: nil)
+        
+        var data: [String] = split(dataString!, isSeparator: { $0 == "\n" })
+        
+        var synonymsString = String(
+            contentsOfFile: NSBundle.mainBundle().pathForResource("synonyms", ofType: "txt")!,
+            encoding: NSUTF8StringEncoding, error: nil)
+        
+        var synonyms: [[String]] = split(synonymsString!, isSeparator: { $0 == "\n" }).map {
+            split($0, isSeparator: { $0 == "\t" })
+        }
+        
+        self.searcher = Search(corpus: data, synonyms: synonyms) 
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
@@ -26,11 +43,5 @@ class test2Tests: XCTestCase {
         XCTAssert(true, "Pass")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
 }

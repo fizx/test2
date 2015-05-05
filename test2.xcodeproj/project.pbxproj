@@ -13,6 +13,10 @@
 		2780651D1ACDCC6D000EE80F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2780651C1ACDCC6D000EE80F /* Images.xcassets */; };
 		278065201ACDCC6D000EE80F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2780651E1ACDCC6D000EE80F /* LaunchScreen.xib */; };
 		2780652C1ACDCC6D000EE80F /* test2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780652B1ACDCC6D000EE80F /* test2Tests.swift */; };
+		278065361ACDD1FC000EE80F /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278065351ACDD1FC000EE80F /* Search.swift */; };
+		278065391ACDE493000EE80F /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 278065371ACDE493000EE80F /* data.txt */; };
+		2780653A1ACDE493000EE80F /* synonyms.txt in Resources */ = {isa = PBXBuildFile; fileRef = 278065381ACDE493000EE80F /* synonyms.txt */; };
+		27C160991AF8A06700AE1018 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278065351ACDD1FC000EE80F /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,9 @@
 		278065251ACDCC6D000EE80F /* test2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2780652A1ACDCC6D000EE80F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2780652B1ACDCC6D000EE80F /* test2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2Tests.swift; sourceTree = "<group>"; };
+		278065351ACDD1FC000EE80F /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		278065371ACDE493000EE80F /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		278065381ACDE493000EE80F /* synonyms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = synonyms.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +84,10 @@
 		278065121ACDCC6D000EE80F /* test2 */ = {
 			isa = PBXGroup;
 			children = (
+				278065371ACDE493000EE80F /* data.txt */,
+				278065381ACDE493000EE80F /* synonyms.txt */,
 				278065151ACDCC6D000EE80F /* AppDelegate.swift */,
+				278065351ACDD1FC000EE80F /* Search.swift */,
 				278065171ACDCC6D000EE80F /* ViewController.swift */,
 				278065191ACDCC6D000EE80F /* Main.storyboard */,
 				2780651C1ACDCC6D000EE80F /* Images.xcassets */,
@@ -192,6 +202,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278065391ACDE493000EE80F /* data.txt in Resources */,
+				2780653A1ACDE493000EE80F /* synonyms.txt in Resources */,
 				2780651B1ACDCC6D000EE80F /* Main.storyboard in Resources */,
 				278065201ACDCC6D000EE80F /* LaunchScreen.xib in Resources */,
 				2780651D1ACDCC6D000EE80F /* Images.xcassets in Resources */,
@@ -212,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278065361ACDD1FC000EE80F /* Search.swift in Sources */,
 				278065181ACDCC6D000EE80F /* ViewController.swift in Sources */,
 				278065161ACDCC6D000EE80F /* AppDelegate.swift in Sources */,
 			);
@@ -222,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2780652C1ACDCC6D000EE80F /* test2Tests.swift in Sources */,
+				27C160991AF8A06700AE1018 /* Search.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +421,7 @@
 				278065311ACDCC6D000EE80F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		278065321ACDCC6D000EE80F /* Build configuration list for PBXNativeTarget "test2Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +430,7 @@
 				278065341ACDCC6D000EE80F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
